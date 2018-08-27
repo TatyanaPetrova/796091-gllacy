@@ -27,23 +27,19 @@ a {
 .catalog a:hover {
   color: #323232;
   background-color: #f7f6f3;
-
 }
 
 .catalog a:focus {
   color: #323232;
   background-color: #f7f6f3;
-
 }
 
 .catalog a:active {}
 
-.catalog a:nth-child(2) {
+.catalog span {
   color: #ffffff;
   background-color: #d07058;
 }
-
-
 
 .catalog a:hover + .catalog-list,
 .catalog a:focus + .catalog-list {
@@ -58,19 +54,16 @@ a {
 .catalog-list {
   color: #323232;
   background-color: #f8f7f4;
-
 }
 
 .catalog-list li:not(:first-child) a:hover {
   color: #323232;
   background-color: #fbded7;
-
 }
 
 .catalog-list li:not(:first-child) a:focus {
   color: #323232;
   background-color: #f6b5a5;
-
 }
 
 .catalog-item a {
@@ -82,11 +75,6 @@ a {
 
 .catalog-list li:first-of-type a {
   font-weight: 700;
-
-}
-
-.catalog-list a:nth-child(2) {
-  color: #ffffff;
 }
 
 .user-navigation {
@@ -111,7 +99,6 @@ a {
   border: 0;
   color: #ebefed;
   background-color: #a1b4a9;
-
 }
 
 .search-form {
@@ -121,7 +108,6 @@ a {
 .search button:hover {
   color: #323232;
   background-color: #f8f7f4;
-
 }
 
 .search:hover .search-form {
@@ -132,7 +118,6 @@ a {
 .login-link .login {
   color: #ebefed;
   background-color: #a1b4a9;
-
 }
 
 .login-box {
@@ -142,7 +127,6 @@ a {
 .login-link .login:hover {
   color: #323232;
   background-color: #f8f7f4;
-
 }
 
 .login-link:hover .login-box {
@@ -157,7 +141,6 @@ a {
   border: 0;
   color: #ffffff;
   background-color: #ee5e3f;
-
 }
 
 .button:hover {
@@ -174,7 +157,6 @@ a {
   color: #e84d37;
 }
 
-
 .cart-box {
   display: none;
 }
@@ -187,7 +169,6 @@ a {
   display: none;
   color: #ffffff;
   background-color: #9db1a5;
-
 }
 
 .cart-link {
@@ -217,7 +198,6 @@ a {
   line-height: 16px;
   color: #323232;
   background-color: #f8f7f4;
-
 }
 
 .cart-box span {
@@ -231,14 +211,11 @@ a {
   border: 0;
   color: #ffffff;
   background-color: #ee5e3f;
-
 }
 
 .cart-button:hover {
   background-color: #f28166;
 }
-
-
 
 .site-navigation,
 .user-navigation,
@@ -257,9 +234,6 @@ a {
   list-style: none;
 }
 
-
-
-
 .slider-title {
   font-size: 60px;
   line-height: 60.35px;
@@ -274,8 +248,6 @@ a {
 .slider-list a:hover {
   background-color: #f07a63;
 }
-
-
 
 .promotion-title {
   font-size: 35px;
@@ -396,7 +368,6 @@ a {
 .footer-copyright {
   font-size: 12px;
   line-height: 18px;
-
 }
 
 .copyright-link {
@@ -446,11 +417,9 @@ fieldset {
   border: 0 none;
 }
 
-
 .filter-form legend {
   font-size: 14px;
   line-height: 16px;
-
 }
 
 .filter-form legend:hover {
@@ -463,7 +432,6 @@ fieldset {
   font-weight: 500;
   color: #ffffff;
   background-color: #a9b9af;
-
 }
 
 .filter-form select:focus {
