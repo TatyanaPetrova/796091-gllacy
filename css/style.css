@@ -500,7 +500,11 @@ fieldset {
 
 .body {
   min-width: 1200px;
-  min-height: 2415px;
+}
+
+.main-container {
+  width: 1200px;
+  margin: auto;
 }
 
 .main-header {
@@ -509,16 +513,16 @@ fieldset {
 }
 
 .container {
-  width: 1200px;
+  width: 1146px;
   padding: 0;
+  padding-left: 27px;
+  padding-right: 27px;
   margin: 0 auto;
 }
 
 .main-navigation {
   display: flex;
   padding: 0;
-  padding-left: 27px;
-  padding-right: 27px;
   padding-top: 9px;
   margin: 0;
 }
@@ -528,13 +532,16 @@ fieldset {
   height: 64px;
 }
 
-.site-navigation {
+.navigation {
   display: flex;
-  justify-content: space-around;
-  width: 406px;
   padding: 0;
   padding-top: 20px;
   margin: 0;
+}
+
+.site-navigation {
+  justify-content: space-around;
+  width: 406px;
   margin-right: auto;
 }
 
@@ -544,15 +551,10 @@ fieldset {
 }
 
 .user-navigation {
-  display: flex;
   justify-content: space-between;
   width: 267px;
-  padding: 0;
-  padding-top: 20px;
-  margin: 0;
   margin-bottom: 15px;
 }
-
 
 .schedule {
   display: flex;
@@ -571,8 +573,6 @@ fieldset {
   display: flex;
   flex-direction: column;
   padding: 0;
-  padding-left: 27px;
-  padding-right: 27px;
   margin: 0;
   margin-bottom: 40px;
 }
@@ -628,10 +628,8 @@ fieldset {
   margin: 0;
 }
 
-.promotion {
+.features {
   padding: 0;
-  padding-left: 27px;
-  padding-right: 27px;
   margin: 0;
   margin-bottom: 40px;
 }
@@ -647,14 +645,6 @@ fieldset {
   width: 560px;
 }
 
-.hit-sales {
-  padding: 0;
-  padding-left: 27px;
-  padding-right: 27px;
-  margin: 0;
-  margin-bottom: 40px;
-}
-
 .hit-sales-list {
   display: flex;
   justify-content: space-between;
@@ -668,11 +658,6 @@ fieldset {
 }
 
 .about-us {
-  padding: 0;
-  padding-left: 27px;
-  padding-right: 27px;
-  margin: 0;
-  margin-bottom: 40px;
   background-color: #e9dcbf;
 }
 
@@ -686,20 +671,18 @@ fieldset {
   width: 560px;
 }
 
-.about-us-wrapper p:nth-child(2) {
+.about-us-wrapper .components {
   order: 2;
 }
 
-.about-us-wrapper p:nth-child(4) {
-  order: 3;
+.about-us-wrapper .deliver {
+  order: 2;
 }
 
 .wrap {
   display: flex;
   justify-content: space-between;
   padding: 0;
-  padding-left: 27px;
-  padding-right: 27px;
   margin: 0;
   margin-bottom: 40px;
 }
@@ -722,20 +705,17 @@ fieldset {
 
 .contacts-wrapper {
   position: absolute;
-  align-self: flex-end;
   width: 303px;
   top: 63px;
   right: 27px;
+
+  background-color: #fffffe;
 }
 
-.main-footer {
+.footer-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0;
-  padding-left: 27px;
-  padding-right: 27px;
-  margin: 0;
 }
 
 .social-list {
@@ -763,8 +743,6 @@ fieldset {
   display: flex;
   align-items: center;
   padding: 0;
-  padding-left: 27px;
-  padding-right: 27px;
   margin: 0;
   margin-bottom: 20px;
 }
@@ -775,8 +753,6 @@ fieldset {
 
 .page-title {
   padding: 0;
-  padding-left: 27px;
-  padding-right: 27px;
   margin: 0;
 }
 
@@ -785,8 +761,6 @@ fieldset {
   flex-wrap: wrap;
   width: 879px;
   padding: 0;
-  padding-left: 27px;
-  padding-right: 27px;
   margin: 0;
   margin-bottom: 40px;
 }
@@ -813,8 +787,6 @@ fieldset {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0;
-  padding-left: 27px;
-  padding-right: 27px;
   margin: 0;
 }
 
@@ -826,8 +798,6 @@ fieldset {
 .paginator-wrapper {
   display: flex;
   padding: 0;
-  padding-left: 27px;
-  padding-right: 27px;
   margin: 0;
 }
 
