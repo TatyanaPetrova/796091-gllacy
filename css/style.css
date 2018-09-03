@@ -1097,7 +1097,7 @@ img {
 .filter-form {
   display: flex;
   flex-wrap: wrap;
-  width: 879px;
+  width: 1040px;
   padding: 0;
   margin: 0;
   margin-bottom: 40px;
@@ -1186,21 +1186,35 @@ img {
   background-color: #eaeaea;
 }
 
+.fat-content {
+  display: flex;
+}
+
 .fat-list {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
+.fat-item {
+  display: inline-block;
+  padding-left: 33px;
+  padding-right: 14px;
+}
+
 .fat-wrapper {
   padding: 7px 12px;
-  background-color: #a9b9af; 
+  background-color: #a9b9af;
   border-radius: 25px;
+}
+
+.fat-item input {
+  display: none;
 }
 
 .fat-content label {
   position: relative;
-  margin-left: 50px;
+  margin-left: 30px;
   padding: 5px 5px;
   cursor: pointer;
 }
@@ -1214,6 +1228,59 @@ img {
   height: 16px;
   border: 3px solid rgba(255, 255, 255, .7);
   border-radius: 50%;
+}
+
+
+.content-0 input:checked ~ .percent-0::after,
+.content-10 input:checked ~ .percent-10::after,
+.content-30 input:checked ~ .percent-30::after,
+.content-more-30 input:checked ~ .percent-above-30::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: -20px;
+  width: 8px;
+  height: 8px;
+  background-color: rgba(255, 255, 255, .7);
+  border-radius: 50%;
+
+}
+
+.additive-wrapper {
+  border-radius: 15px;
+  background-color:  #a9b9af;
+}
+
+.fillers-list {
+  margin: 0;
+  padding: 0;
+}
+
+.fillers-item {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-right: 18px;
+  padding-left: 32px;
+}
+
+.fillers-item input {
+  display: none;
+}
+
+.fillers-item label {
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.fillers-item label::before {
+  content: "";
+  position: absolute;
+  left: -25px;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, .7);
+  border-radius: 4px;
 }
 
 
