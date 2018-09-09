@@ -113,12 +113,12 @@
             <div class="cart-box">
               <h2 class="visually-hidden">Корзина</h2>
               <table class="application">
-                <tr class="1-row">
+                <tr>
                   <td class="product-name orange">Пломбир с апельсиновым джемом</td>
                   <td>1,5кг х <span>200руб.</span></td>
                   <td>300руб.</td>
                 </tr>
-                <tr class="2-row">
+                <tr>
                   <td class="product-name strawberry">Клубничный пломбир с присыпкой из белого шоколада</td>
                   <td>1,5кг х <span>300руб</span></td>
                   <td>450руб.</td>
@@ -174,8 +174,10 @@
               <div class="range-line">
                 <div class="line-active">
                 </div>
-                <div class="switch-min"></div>
-                <div class="switch-max"></div>
+                <button class="visually-hidden" type="button" id="min"></button>
+                <label class="switch-min" for="min"></label>
+                <button class="visually-hidden" type="button" id="max"></button>
+                <label class="switch-max" for="max"></label>
               </div>
             </div>
           </fieldset>
@@ -186,19 +188,19 @@
               <ul class="fat-list">
                 <li class="fat-item content-0">
                   <input class="input-radio" type="radio" name="fat-content-group" value="0%" id="fat-0">
-                  <label class="percent-0" for="fat-0">0%</label>
+                  <label for="fat-0">0%</label>
                 </li>
                 <li class="fat-item content-10">
                   <input class="iput-radio" type="radio" name="fat-content-group" value="up-to 10%" id="fat-10" checked>
-                  <label class="percent-10" for="fat-10">до 10%</label>
+                  <label for="fat-10">до 10%</label>
                 </li>
                 <li class="fat-item  content-30">
                   <input class="input-radio" type="radio" name="fat-content-group" value="up-to 30%" id="fat-30">
-                  <label class="percent-30" for="fat-30">до 30%</label>
+                  <label for="fat-30">до 30%</label>
                 </li>
                 <li class="fat-item  content-more-30">
                   <input class="input-radio" type="radio" name="fat-content-group" value="above- 30%" id="fat-more-30">
-                  <label class="percent-above-30" for="fat-more-30">выше 30%</label>
+                  <label for="fat-more-30">выше 30%</label>
                 </li>
               </ul>
             </div>
@@ -207,28 +209,28 @@
           <fieldset class="additive">
             <legend>Наполнители:</legend>
             <div class="additive-wrapper">
-              <u class="fillers-list">
-            <li class="fillers-item">
-             <input class="filter-input-checkbox" type="checkbox" name="fillers" id="filler-chocolate" checked>
-              <label for="filler-chocolate">шоколадные</label>
-            </li>
-            <li class="fillers-item">
-              <input class="filter-input-checkbox" type="checkbox" name="fillers" id="filler-shugar" checked>
-              <label for="filler-shugar">сахарные присыпки</label>
-            </li>
-            <li class="fillers-item">
-              <input class="filter-input-checkbox" type="checkbox" name="fillers" id="filler-fruit">
-              <label for="filler-fruit">фрукты</label>
-            </li>
-            <li class="fillers-item">
-              <input class="filter-input-checkbox" type="checkbox" name="fillers" id="filler-syrup">
-              <label for="filler-syrup">сиропы</label>
-            </li>
-            <li class="fillers-item">
-              <input class="filter-input-checkbox" type="checkbox" name="fillers" id="filler-jam">
-              <label for="filler-jam">джемы</label>
-            </li>
-          </u>
+              <ul class="fillers-list">
+                <li class="fillers-item">
+                  <input class="filter-input-checkbox" type="checkbox" name="fillers" id="filler-chocolate" checked>
+                  <label for="filler-chocolate">шоколадные</label>
+                </li>
+                <li class="fillers-item">
+                  <input class="filter-input-checkbox" type="checkbox" name="fillers" id="filler-shugar" checked>
+                  <label for="filler-shugar">сахарные присыпки</label>
+                </li>
+                <li class="fillers-item">
+                  <input class="filter-input-checkbox" type="checkbox" name="fillers" id="filler-fruit">
+                  <label for="filler-fruit">фрукты</label>
+                </li>
+                <li class="fillers-item">
+                  <input class="filter-input-checkbox" type="checkbox" name="fillers" id="filler-syrup">
+                  <label for="filler-syrup">сиропы</label>
+                </li>
+                <li class="fillers-item">
+                  <input class="filter-input-checkbox" type="checkbox" name="fillers" id="filler-jam">
+                  <label for="filler-jam">джемы</label>
+                </li>
+              </ul>
             </div>
           </fieldset>
           <button class="filter-button" type="submit">Применить</button>
