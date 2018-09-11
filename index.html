@@ -481,8 +481,8 @@
 	          <path fill="#e1e7e4" d="M16,0C7.164,0,0,7.164,0,16c0,8.837,7.164,16,16,16c8.837,0,16-7.163,16-16C32,7.164,24.837,0,16,0z
 		      M22.602,20.531c-0.273,0.533-0.646,0.976-1.124,1.327c-0.552,0.415-1.161,0.71-1.823,0.886s-1.501,0.264-2.519,0.264h-6.121V8.987
 		     h5.443c1.13,0,1.957,0.038,2.48,0.113c0.524,0.076,1.045,0.242,1.561,0.5c0.533,0.27,0.929,0.632,1.189,1.087
-		    c0.26,0.455,0.392,0.975,0.392,1.558c0,0.6 78-0.179,1.278-0.536,1.795c-0.358,0.518-0.863,0.92-1.517,1.208v0.075
-		    c0.917,0.182,1.642,0.559,2.179,1.13c0.537,0.571,0.807,1.325,0.807,2.261C23.013,19.392,22.875,19.997,22.602,20.531z"/>
+		     c0.26,0.455,0.392,0.975,0.392,1.558c0,0.6 78-0.179,1.278-0.536,1.795c-0.358,0.518-0.863,0.92-1.517,1.208v0.075
+		     c0.917,0.182,1.642,0.559,2.179,1.13c0.537,0.571,0. 807,1.325,0.807,2.261C23.013,19.392,22.875,19.997,22.602,20.531z"/>
             </g>
             </svg>
             </a>
@@ -490,12 +490,14 @@
         </ul>
       </div>
       <ul class="documents-list">
-        <li class="documents-item"><a class="for-supplier" href="#">
-        <svg version="1.1" id="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15px" height="13px" viewBox="0 0 15 13" enable-background="new 0 0 15 13" xml:space="preserve">
+        <li class="documents-item">
+          <a class="for-supplier" href="#">
+            <svg version="1.1" id="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15px" height="13px" viewBox="0 0 15 13" enable-background="new 0 0 15 13" xml:space="preserve">
         <path fill="#FFFFFF" d="M10.799,0c-1.35,0-2.551,0.65-3.3,1.661C6.75,0.65,5.549,0,4.199,0C1.875,0,0,1.806,0,4.044
 	    C0,7.223,7.499,13,7.499,13s7.499-5.777,7.499-8.956C14.998,1.806,13.123,0,10.799,0z"/>
         </svg>
-        <b>Для поставщиков</b></a>
+            <b>Для поставщиков</b>
+          </a>
         </li>
         <li class="documents-item"><a href="#">Наши документы</a>
         </li>
@@ -513,6 +515,7 @@
 
   <section class="modal modal-feedback">
     <h2>Мы обязательно вам ответим!</h2>
+    <button class="modal-close" type="button">Закрыть</button>
     <form class="feedback-form" action="" method="post">
 
       <p>
@@ -527,7 +530,7 @@
 
       <p>
         <label class="visually-hidden" for="user-comment">Ваш отзыв</label>
-        <textarea class="feedback-user-comment" name="user-comment" id="user-comment" rows="8">Напишите что-нибудь...</textarea>
+        <textarea class="feedback-user-comment" name="user-comment" id="user-comment" rows="8" placeholder="Напишите что-нибудь..."></textarea>
       </p>
 
       <button class="button modal-feedback-button" type="submit">Отправить</button>
@@ -535,6 +538,7 @@
     </form>
     <button class="modal-feedback-close" type="button"><span class="visually-hidden">Закрыть</span></button>
   </section>
+  <div class="modal-overlay"></div>
 </body>
 
 </html>
