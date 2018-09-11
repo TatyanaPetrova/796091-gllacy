@@ -10,13 +10,14 @@
 </head>
 
 <body>
-  <header class="main-header container">
+  <header class="main-header header-main-page container">
 
     <nav class="main-navigation">
       <img class="header-logo" src="img/logo-gllacy.svg" width="154" height="64" alt="Логотип интернет-магазина 'Глейси'">
       <ul class="site-navigation navigation">
         <li class="site-navigation-item catalog">
           <a class="subtitle" href="#">Каталог</a>
+          <div class="link-wrap"></div>
           <ul class="catalog-list">
             <li class="catalog-item">
               <a href="">Новинки</a>
@@ -58,6 +59,7 @@
 
               <span class="visually-hidden">Поиск</span>
             </button>
+            <div class="link-wrap"></div>
             <div class="search-wrapper">
               <form class="search-form" action="" method="post">
                 <p>
@@ -78,6 +80,7 @@
               </svg>
               Вход
             </a>
+            <div class="link-wrap"></div>
             <div class="login-box">
               <h2 class="visually-hidden">Вход в личный кабинет</h2>
               <form class="login-form" action="" method="post">
@@ -354,26 +357,25 @@
       </div>
     </div>
     <section class="all-contacts">
-      <div class="contacts-wrapper">
-        <h2 class="visually-hidden">Как нас найти</h2>
-        <div class="contacts">
-          <p class="adress">
-            Адрес главного офиса<br> и офлайн-магазина:<br>
-            <span class="contact">ул. Большая Конюшенная<br>
-         19/8, Санкт-Петербург</span>
-          </p>
-          <p class="order">
-            Для заказов по телефону:<br>
-            <span class="contact">8 812-450-25-25</span><br>
-            <span class="contact-time">(с 10 до 20 ежедневно)</span>
-          </p>
+      <div class="container map-container">
+        <div class="contacts-wrapper">
+          <h2 class="visually-hidden">Как нас найти</h2>
+          <div class="contacts">
+            <p class="adress">
+              Адрес главного офиса<br> и офлайн-магазина:<br>
+              <span class="contact">ул. Большая Конюшенная<br>
+              19/8, Санкт-Петербург</span>
+            </p>
+            <p class="order">
+              Для заказов по телефону:<br>
+              <span class="contact">8 812-450-25-25</span><br>
+              <span class="contact-time">(с 10 до 20 ежедневно)</span>
+            </p>
+          </div>
+          <a class="feedback button" href="">Форма обратной связи</a>
         </div>
-        <a class="feedback button" href="">Форма обратной связи</a>
-      </div>
-      <img src="img/map.jpg" weight="1250" height="430" alt="ул. Большая Конюшенная
-         19/8, Санкт-Петербург">
-      <svg version="1.1" id="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="80px" height="140px" viewBox="0 0 80 140" enable-background="new 0 0 80 140" xml:space="preserve">
-      <g>
+        <svg version="1.1" id="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="80px" height="140px" viewBox="0 0 80 140" enable-background="new 0 0 80 140" xml:space="preserve">
+        <g>
 	    <path fill="#E84D37" d="M40,7.101c15.622,0,28.285,12.664,28.285,28.286c0,5.112-1.362,9.902-3.734,14.041
 		c4.503,0.643,7.971,4.506,7.971,9.188c0,5.133-4.16,9.293-9.293,9.293c-4.682,0-8.545-3.467-9.188-7.971
 		c-0.353,0.201-0.709,0.396-1.07,0.583C51.959,66.781,46.545,71.566,40,71.566c-6.546,0-11.96-4.786-12.972-11.046
@@ -410,6 +412,10 @@
 	    l-1.663,1.663l-3.898-3.898l3.898-3.898l2.838,2.838L52.329,91.464z M54.248,86.084l-2.168-2.168l3.898-3.898l0.319,0.319
 	    L54.248,86.084z"/>
         </svg>
+      </div>
+      <img src="img/map.jpg" weight="1250" height="430" alt="ул. Большая Конюшенная
+         19/8, Санкт-Петербург">
+
 
     </section>
   </main>
@@ -507,7 +513,7 @@
         </li>
       </ul>
       <p class="footer-copyright">
-        <a class="logo" href="https://htmlacademy.ru/intensive/htmlcss"> <img src="img/logo-htmlacademy-small.svg" width="108" height="39" alt="Логотип HTML академии"></a><br> Сделано в
+        <a class="logo" href="https://htmlacademy.ru/intensive/htmlcss"> <img src="img/logo-htmlacademy-small.svg" width="120" height="39" alt="Логотип HTML академии"></a><br> Сделано в
         <a class="copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy </a>2017
       </p>
     </div>
