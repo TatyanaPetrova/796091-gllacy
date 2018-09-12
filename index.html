@@ -16,7 +16,7 @@
       <img class="header-logo" src="img/logo-gllacy.svg" width="154" height="64" alt="Логотип интернет-магазина 'Глейси'">
       <ul class="site-navigation navigation">
         <li class="site-navigation-item catalog">
-          <a class="subtitle" href="#">Каталог</a>
+          <a class="subtitle" href="#"><span class="underline">Каталог</span></a>
           <div class="link-wrap"></div>
           <ul class="catalog-list">
             <li class="catalog-item">
@@ -37,10 +37,10 @@
           </ul>
         </li>
         <li class="site-navigation-item">
-          <a href="">Доставка и оплата</a>
+          <a href=""><span class="underline">Доставка и оплата</span></a>
         </li>
         <li class="site-navigation-item">
-          <a href="">О Компании</a>
+          <a href=""><span class="underline">О Компании</span></a>
         </li>
       </ul>
       <div class="user-navigation-wrapper">
@@ -63,8 +63,8 @@
             <div class="search-wrapper">
               <form class="search-form" action="" method="post">
                 <p>
-                  <label class="visually-hidden" for="search">Поиск по сайту</label>
                   <input type="search" name="search" id="search" placeholder="Что ищем?">
+                  <label class="visually-hidden" for="search">Поиск по сайту</label>
                 </p>
               </form>
             </div>
@@ -86,13 +86,13 @@
               <form class="login-form" action="" method="post">
 
                 <p>
-                  <label class="visually-hidden" for="login-user-mail">Электронная почта</label>
                   <input class="login-icon-user" type="text" name="user-mail" id="login-user-mail" placeholder="Электронная почта">
+                  <label class="visually-hidden" for="login-user-mail">Электронная почта</label>
                 </p>
 
                 <p>
-                  <label class="visually-hidden" for="password">Пароль</label>
                   <input class="login-icon-password" type="password" name="password" id="password" placeholder="Пароль">
+                  <label class="visually-hidden" for="password">Пароль</label>
                 </p>
                 <div class="login-inner">
                   <button class="button" type="submit">Войти</button>
@@ -135,45 +135,47 @@
 
 
       <section class="slider">
-        <h2 class="visually-hidden">Виды мороженного</h2>
+        <div class="slider-container">
+          <h2 class="visually-hidden">Виды мороженного</h2>
 
-        <input class="radio-button page-1" type="radio" id="product-1" name="pages" aria-label="Страница 1" checked>
-
-
-        <input class="radio-button page-2" type="radio" id="product-2" name="pages" aria-label="Страница 2">
+          <input class="radio-button page-1" type="radio" id="product-1" name="pages" aria-label="Страница 1" checked>
 
 
-        <input class="radio-button page-3" type="radio" id="product-3" name="pages" aria-label="Страница 3">
+          <input class="radio-button page-2" type="radio" id="product-2" name="pages" aria-label="Страница 2">
 
-        <div class="slider-controls">
-          <label class="product-1" for="product-1">Первый</label>
-          <label class="product-2" for="product-2">Второй</label>
-          <label class="product-3" for="product-3">Третий</label>
+
+          <input class="radio-button page-3" type="radio" id="product-3" name="pages" aria-label="Страница 3">
+
+          <div class="slider-controls">
+            <label class="product-1" for="product-1">Первый</label>
+            <label class="product-2" for="product-2">Второй</label>
+            <label class="product-3" for="product-3">Третий</label>
+          </div>
+
+          <ul class="slider-list">
+            <li class="cream-brulee">
+              <div class="slide-wrapper">
+                <h3 class="slider-title">Крем-брюле и пломбир с малиновым джемом</h3>
+                <a class="button" href="#">Давайте оба!</a>
+              </div>
+              <img src="img/cream-brulee-and-ice-cream-with-raspberry-jam.png" alt="Мороженное крем-брюле и пломбир с малиновым джемом" width="1045" height="881">
+            </li>
+            <li class="chocolate-and-lemon">
+              <div class="slide-wrapper">
+                <h3 class="slider-title">Шоколадный пломбир и лимонный сорбет </h3>
+                <a class="button" href="#">Давайте оба!</a>
+              </div>
+              <img src="img/chocolate-ice-cream-and-lemon-sorbet.png" alt="Мороженное шоколадный пломбир и лимонный сорбет" width="1045" height="881">
+            </li>
+            <li class="fudge-and-strawberry">
+              <div class="slide-wrapper">
+                <h3 class="slider-title">Пломбир с помадкой и клубничный щербет</h3>
+                <a class="button" href="#">Давайте оба!</a>
+              </div>
+              <img src="img/ice-cream-with-fudge-and-strawberry-sherbet.png" alt="Мороженное пломбир с помадкой и клубничный щербет" width="1045" height="881">
+            </li>
+          </ul>
         </div>
-
-        <ul class="slider-list">
-          <li class="cream-brulee">
-            <div class="slide-wrapper">
-              <h3 class="slider-title">Крем-брюле и пломбир с малиновым джемом</h3>
-              <a class="button" href="#">Давайте оба!</a>
-            </div>
-            <img src="img/cream-brulee-and-ice-cream-with-raspberry-jam.png" alt="Мороженное крем-брюле и пломбир с малиновым джемом" width="1045" height="881">
-          </li>
-          <li class="chocolate-and-lemon">
-            <div class="slide-wrapper">
-              <h3 class="slider-title">Шоколадный пломбир и лимонный сорбет </h3>
-              <a class="button" href="#">Давайте оба!</a>
-            </div>
-            <img src="img/chocolate-ice-cream-and-lemon-sorbet.png" alt="Мороженное шоколадный пломбир и лимонный сорбет" width="1045" height="881">
-          </li>
-          <li class="fudge-and-strawberry">
-            <div class="slide-wrapper">
-              <h3 class="slider-title">Пломбир с помадкой и клубничный щербет</h3>
-              <a class="button" href="#">Давайте оба!</a>
-            </div>
-            <img src="img/ice-cream-with-fudge-and-strawberry-sherbet.png" alt="Мороженное пломбир с помадкой и клубничный щербет" width="1045" height="881">
-          </li>
-        </ul>
       </section>
 
 
@@ -203,7 +205,7 @@
           <li class="hit-sales-item">
             <img src="img/creamy-ice-cream-with-orange-jam-and-citrus-chips.png" alt="Сливочное мороженное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
             <a href="#">
-              <h3 class="item-title">Сливочное с апельсиновым джемом и цитрусовой стружкой </h3>
+              <h3 class="item-title"><span class="underline">Сливочное с апельсиновым джемом и цитрусовой стружкой</span></h3>
             </a>
             <p class="item-price">310₽<span class="weight">/кг</span></p>
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="61px" height="61px" viewBox="0 0 61 61" enable-background="new 0 0 61 61" xml:space="preserve">
@@ -231,7 +233,7 @@
           <li class="hit-sales-item">
             <img src="img/creamy-coffee-ice-cream-with-chocolate-pieces.png" alt="Сливочно-кофейное мороженное с кусочками шоколада " width="267" height="267">
             <a href="#">
-              <h3 class="item-title">Сливочно-кофейное с кусочками шоколада</h3>
+              <h3 class="item-title"><span class="underline">Сливочно-кофейное с кусочками шоколада</span></h3>
             </a>
             <p class="item-price">380₽<span class="weight">/кг</span></p>
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="61px" height="61px" viewBox="0 0 61 61" enable-background="new 0 0 61 61" xml:space="preserve">
@@ -259,7 +261,7 @@
           <li class="hit-sales-item">
             <img src="img/creamy-strawberry-ice-cream-with-white-chocolate-powder.png" alt="Сливочно-клубничное мороженное с присыпкой из белого шоколада" width="267" height="267">
             <a href="#">
-              <h3 class="item-title">Сливочно-клубничное с присыпкой из белого шоколада</h3>
+              <h3 class="item-title"><span class="underline">Сливочно-клубничное с присыпкой из белого шоколада</span></h3>
             </a>
             <p class="item-price">355₽<span class="weight">/кг</span></p>
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="61px" height="61px" viewBox="0 0 61 61" enable-background="new 0 0 61 61" xml:space="preserve">
@@ -287,7 +289,7 @@
           <li class="hit-sales-item">
             <img src="img/creamy-ice-cream-with-caramel-sauce.png" alt="Сливочное мороженное крем-брюле с карамельной подливкой" width="267" height="267">
             <a href="#">
-              <h3 class="item-title">Сливочное крем-брюле с карамельной подливкой</h3>
+              <h3 class="item-title"><span class="underline">Сливочное крем-брюле с карамельной подливкой</span></h3>
             </a>
             <p class="item-price">415₽<span class="weight">/кг</span></p>
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="61px" height="61px" viewBox="0 0 61 61" enable-background="new 0 0 61 61" xml:space="preserve">
@@ -346,8 +348,8 @@
           <form class="subscription-form" action="" method="post">
 
             <p>
-              <label class="visually-hidden" for="e-mail">Электронная почта</label>
               <input class="subscription-mail" type="text" name="user-e-mail" id="e-mail" placeholder="Электронная почта">
+              <label class="visually-hidden" for="e-mail">Электронная почта</label>
             </p>
 
             <button class="button" type="submit">Отправить</button>
@@ -502,19 +504,20 @@
         <path fill="#FFFFFF" d="M10.799,0c-1.35,0-2.551,0.65-3.3,1.661C6.75,0.65,5.549,0,4.199,0C1.875,0,0,1.806,0,4.044
 	    C0,7.223,7.499,13,7.499,13s7.499-5.777,7.499-8.956C14.998,1.806,13.123,0,10.799,0z"/>
         </svg>
-            <b>Для поставщиков</b>
+            <b><span class="underline">Для поставщиков</span></b>
           </a>
         </li>
-        <li class="documents-item"><a href="#">Наши документы</a>
+        <li class="documents-item"><a href="#"><span class="underline">Наши документы </span></a>
         </li>
-        <li class="documents-item"><a href="#">О производстве</a>
+        <li class="documents-item"><a href="#"><span class="underline">О производстве</span></a>
         </li>
-        <li class="documents-item"><a href="#">Экологические стандарты</a>
+        <li class="documents-item"><a href="#"><span class="underline">Экологические стандарты</span></a>
         </li>
       </ul>
       <p class="footer-copyright">
-        <a class="logo" href="https://htmlacademy.ru/intensive/htmlcss"> <img src="img/logo-htmlacademy-small.svg" width="120" height="39" alt="Логотип HTML академии"></a><br> Сделано в
-        <a class="copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy </a>2017
+        <a class="logo" href="https://htmlacademy.ru/intensive/htmlcss"> <img src="img/html-academy.svg" width="120" height="39" alt="Логотип HTML академии"></a><br> Сделано в
+        <a class="copyright-link" href="https://htmlacademy.ru/intensive/htmlcss"><span class="underline">HTML Academy</span>
+        </a>2017
       </p>
     </div>
   </footer>

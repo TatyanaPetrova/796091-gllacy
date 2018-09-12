@@ -21,7 +21,8 @@ img {
 }
 
 .visually-hidden:not(:focus):not(:active),
-button[type="button"].visually-hidden {
+button[type="button"].visually-hidden,
+input[type="radio"] {
   position: absolute;
 
   width: 1px;
@@ -34,6 +35,10 @@ button[type="button"].visually-hidden {
   clip-path: inset(100%);
   clip: rect(0, 0, 0, 0);
   overflow: hidden;
+}
+
+.underline {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 /*--------------Навигация по сайту-------------*/
@@ -49,7 +54,7 @@ button[type="button"].visually-hidden {
   margin: 0 auto;
 }
 
- .header-main-page {
+.header-main-page {
   margin-bottom: 274px;
 }
 
@@ -96,8 +101,6 @@ button[type="button"].visually-hidden {
   padding-bottom: 8px;
   padding-top: 8px;
   text-align: center;
-  text-decoration: underline;
-  text-decoration-color: #adc4b7;
 }
 
 .site-navigation .site-navigation-item .subtitle-currently {
@@ -326,6 +329,10 @@ button[type="button"].visually-hidden {
   -1px -1px 0px #d3d3d2;
 }
 
+.search-form input:focus + label {
+  font-size: 0;
+}
+
 /*-----Вход-----*/
 
 .login-link {
@@ -455,6 +462,10 @@ button[type="button"].visually-hidden {
   color: #e84d37;
 }
 
+.login-form input:focus + label {
+  font-size: 0;
+}
+
 /*-----Корзина----*/
 
 .cart {
@@ -463,6 +474,15 @@ button[type="button"].visually-hidden {
 
 .cart-box {
   display: none;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  z-index: 10;
+  font-size: 13px;
+  line-height: 16px;
+  color: #323232;
+  background-color: #f8f7f4;
+  border-radius: 10px;
 }
 
 .cart:hover .cart-box {
@@ -497,25 +517,13 @@ button[type="button"].visually-hidden {
   left: 15px;
 }
 
-.cart-box {
-  position: absolute;
-  top: 40px;
-  left: -420px;
-  z-index: 10;
-  font-size: 13px;
-  line-height: 16px;
-  color: #323232;
-  background-color: #f8f7f4;
-  border-radius: 10px;
-}
-
 .cart-box span {
   color: #999999;
 }
 
 .cart .cart-button {
   display: inline-block;
-  margin-left: 356px;
+  margin-left: 350px;
   margin-right: 16px;
   margin-bottom: 20px;
   padding: 10px 15px;
@@ -532,17 +540,17 @@ button[type="button"].visually-hidden {
   background-color: #f28166;
 }
 
+.cart-button:focus {
+  background-color: #eb563b;
+}
+
 .application {
   border-collapse: collapse;
 }
 
-.application td:not(.product-name) {
-  padding: 20px 28px;
+.application td:not(.order-line) {
+  padding: 20px 25px;
   white-space: nowrap;
-}
-
-.product-name {
-  width: 216px;
 }
 
 .application tr {
@@ -554,64 +562,23 @@ button[type="button"].visually-hidden {
 }
 
 .application .product-name {
-  padding-left: 80px;
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  width: 308px;
+  padding-left: 70px;
+  color: #323232;
 }
 
-.strawberry::before {
-  content: "";
-  position: absolute;
-  top: 60px;
-  left: 38px;
-  width: 35px;
-  height: 35px;
-  background-image: url(../img/strawberry-ice-cream-mini.png);
-  background-repeat: no-repeat;
-  overflow: hidden;
-}
-
-.orange::before {
-  content: "";
-  position: absolute;
-  top: 10px;
-  left: 38px;
-  width: 35px;
-  height: 35px;
-  background-image: url(../img/ice-cream-with-orange-jam-mini.png);
-  background-repeat: no-repeat;
-  overflow: hidden;
-}
-
-.cart-del,
 .cart-delete {
   position: absolute;
-  left: -2px;
+  left: 10px;
   top: 25px;
-  width: 9px;
-  height: 9px;
-  font-size: 0;
-  background-color: transparent;
+  width: 5px;
+  height: 5px;
   border: 0;
+  background-color: transparent;
   cursor: pointer;
-}
-
-.cart-del::after,
-.cart-del::before {
-  content: "";
-  position: absolute;
-  top: 43px;
-  left: 16px;
-  width: 14px;
-  height: 1px;
-  background-color: #231f20;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-.cart-del::after {
-  -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
 }
 
 .cart-delete::after,
@@ -619,7 +586,7 @@ button[type="button"].visually-hidden {
   content: "";
   position: absolute;
   top: 0;
-  left: 16px;
+  left: 0px;
   width: 14px;
   height: 1px;
   background-color: #231f20;
@@ -632,6 +599,17 @@ button[type="button"].visually-hidden {
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
+}
+
+.order-line {
+  position: relative;
+}
+
+.orange img,
+.strawberry img {
+  position: absolute;
+  top: 10px;
+  left: 30px;
 }
 
 .last-row-price {
@@ -668,6 +646,10 @@ button[type="button"].visually-hidden {
   margin-bottom: 4px;
 }
 
+.slider-container {
+  position: relative;
+}
+
 .slide-wrapper {
   position: relative;
   text-align: center;
@@ -675,7 +657,8 @@ button[type="button"].visually-hidden {
 
 .slider img {
   position: absolute;
-  top: 0px;
+  top: -390px;
+  left: 50px;
   z-index: -1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -740,7 +723,7 @@ button[type="button"].visually-hidden {
 
 .slider-controls {
   position: absolute;
-  top: 560px;
+  top: 170px;
   z-index: 20;
 
   font-size: 0;
@@ -882,6 +865,7 @@ button[type="button"].visually-hidden {
 .item-price {
   position: absolute;
   top: 167px;
+  left: 0;
   z-index: 20;
 
   font-size: 45px;
@@ -900,8 +884,6 @@ button[type="button"].visually-hidden {
   margin-top: 5px;
   font-size: 16px;
   line-height: 22px;
-  text-decoration: underline;
-  text-decoration-color: #adbdb4;
   color: #ffffff;
 }
 
@@ -1093,6 +1075,10 @@ button[type="button"].visually-hidden {
   -1px -1px 0px #d3d3d2;
 }
 
+.subscription-mail:focus + label {
+  font-size: 0;
+}
+
 .subscription-form button {
   display: inline-block;
   padding: 9px 18px;
@@ -1223,7 +1209,7 @@ button[type="button"].visually-hidden {
   width: 324px;
   padding: 0;
   margin: 0;
-  margin-top: 20px;
+  margin-top: 13px;
 }
 
 .documents-list a {
@@ -1235,8 +1221,6 @@ button[type="button"].visually-hidden {
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
-  text-decoration: underline;
-  text-decoration-color: #adbdb4;
   color: #ffffff;
 }
 
@@ -1250,7 +1234,7 @@ button[type="button"].visually-hidden {
 
 .for-supplier svg {
   position: absolute;
-  top: 7px;
+  top: 3px;
   left: -20px;
 }
 
@@ -1265,8 +1249,6 @@ button[type="button"].visually-hidden {
 
 .copyright-link {
   color: #ffffff;
-  text-decoration: underline;
-  text-decoration-color: #adbdb4;
 }
 
 .copyright-link:hover {
@@ -1417,8 +1399,6 @@ button[type="button"].visually-hidden {
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
-  text-decoration: underline;
-  text-decoration-color: #adc4b7;
   color: #ffffff;
 }
 
@@ -1465,7 +1445,6 @@ button[type="button"].visually-hidden {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  width: 1040px;
   padding: 0;
   margin: 0;
   margin-bottom: 28px;
@@ -1512,23 +1491,28 @@ button[type="button"].visually-hidden {
 .filter-form .sort {
   position: relative;
   z-index: 2;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 500;
+  box-sizing: border-box;
+  width: 169px;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  padding-right: 25px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
   color: #fff;
   background-color: transparent;
   border: 0;
 }
 
+.filter-form .sort::-ms-expand {
+  display: none;
+}
+
 .sorting svg {
   position: absolute;
   right: 11px;
-  top: 13px;
+  top: 14px;
   z-index: 1;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1602,8 +1586,8 @@ button[type="button"].visually-hidden {
 
 .filter-button {
   margin: 0;
-  margin-top: 23px;
-  margin-left: 12px;
+  margin-top: 20px;
+  margin-left: 10px;
   padding: 7px 30px;
   font-size: 16px;
   line-height: 18px;
@@ -1629,6 +1613,7 @@ button[type="button"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: column;
 }
 
 .fat-list {
@@ -1643,6 +1628,7 @@ button[type="button"].visually-hidden {
 }
 
 .fat-wrapper {
+  box-sizing: border-box;
   padding: 7px 12px;
   background-color: #a9b9af;
   border-radius: 25px;
@@ -1816,7 +1802,6 @@ button[type="button"].visually-hidden {
 }
 
 .product-catalog-list img {
-  position: relative;
   z-index: 10;
   width: 267px;
   height: 267px;
