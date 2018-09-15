@@ -3,7 +3,7 @@ body {
   padding: 0;
   min-width: 1200px;
 
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: 'Roboto', "Arial", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
@@ -867,7 +867,7 @@ input[type="radio"] {
 }
 
 .hit-sales-list img {
-  margin-bottom: -3px;
+  margin-bottom: 5px;
 }
 
 .item-price {
@@ -890,7 +890,6 @@ input[type="radio"] {
 .item-title {
   width: 256px;
   margin: 0;
-  margin-top: 9px;
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
@@ -1287,10 +1286,11 @@ input[type="radio"] {
 }
 
 .modal-feedback h2 {
-  margin-top: 20px;
+  margin-top: 17px;
   margin-left: 25px;
-  font-size: 18px;
-  line-height: 24px;
+  margin-bottom: 18px;
+  font-size: 24px;
+  line-height: 28px;
   font-weight: 700;
   color: #323232;
 }
@@ -1300,7 +1300,7 @@ input[type="radio"] {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 10px 13px;
-  margin-left: 25px;
+  margin-left: 27px;
   border: 1px solid #d3d3d2;
   border-radius: 5px;
 }
@@ -1321,11 +1321,19 @@ input[type="radio"] {
   width: 428px;
 }
 
+.feedback-form p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 23px;
+}
+
 .modal-feedback-button {
   display: inline-block;
   padding: 10px 25px;
   margin-left: 315px;
-  border-radius: 15px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  border-radius: 20px;
 }
 
 .modal-feedback-close {
@@ -1336,7 +1344,7 @@ input[type="radio"] {
 .modal-close {
   position: absolute;
   top: 10px;
-  right: 10px;
+  right: 14px;
   width: 22px;
   height: 22px;
   font-size: 0;
@@ -1377,6 +1385,10 @@ input[type="radio"] {
   z-index: 90;
   background-color: rgba(0, 0, 0, 0.6);
   display: none;
+}
+
+.modal-show {
+  display: block;
 }
 
 /*------каталог------*/
@@ -1634,11 +1646,11 @@ input[type="radio"] {
 
 .fat-item {
   display: inline-block;
-  padding-left: 4px;
 }
 
 .fat-wrapper {
   box-sizing: border-box;
+  height: 36px;
   padding: 7px 12px;
   background-color: #a9b9af;
   border-radius: 25px;
@@ -1651,7 +1663,7 @@ input[type="radio"] {
 .fat-content label {
   position: relative;
   margin-left: 30px;
-  padding: 3px 5px;
+  padding: 2px 9px;
   cursor: pointer;
 }
 
@@ -1677,9 +1689,6 @@ input[type="radio"] {
   border-radius: 50%;
 }
 
-.content input:checked + label:hover::after,
-.content input:checked + label:hover::after,
-.content input:checked + label:hover::after,
 .content input:checked + label:hover::after {
   content: " ";
   position: absolute;
@@ -1691,9 +1700,6 @@ input[type="radio"] {
   border-radius: 50%;
 }
 
-.content input:checked + label::after,
-.content input:checked + label::after,
-.content input:checked + label::after,
 .content input:checked + label::after {
   content: " ";
   position: absolute;
@@ -1719,7 +1725,7 @@ input[type="radio"] {
 .fillers-item {
   padding-top: 7px;
   padding-bottom: 7px;
-  padding-left: 52px;
+  padding-left: 55px;
 }
 
 .fillers-item input {
@@ -1815,7 +1821,7 @@ input[type="radio"] {
   z-index: 10;
   width: 267px;
   height: 267px;
-  margin-bottom: 2px;
+  margin-bottom: 15px;
 }
 
 /*-----быстрый просмотр---*/
