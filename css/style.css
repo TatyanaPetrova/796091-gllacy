@@ -73,10 +73,6 @@ input[type="radio"] {
   padding-right: 7px;
 }
 
-.main-header-logo {
-  margin-right: 10px;
-}
-
 .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -98,7 +94,7 @@ input[type="radio"] {
   color: #ffffff;
 }
 
-.site-navigation .site-navigation-item > a {
+.site-navigation-item > a {
   display: block;
   padding-left: 14px;
   padding-right: 14px;
@@ -107,7 +103,7 @@ input[type="radio"] {
   text-align: center;
 }
 
-.site-navigation .site-navigation-item .subtitle-currently {
+.site-navigation-item .subtitle-currently {
   text-decoration: none;
 }
 
@@ -367,19 +363,19 @@ input[type="radio"] {
   -1px -1px 0px #d3d3d2;
 }
 
-.login-link .login:hover,
-.login-link .login:focus {
+.login:hover,
+.login:focus {
   color: #323232;
   background-color: #f8f7f4;
 }
 
-.login-link .login:hover path,
-.login-link .login:focus path {
+.login:hover path,
+.login:focus path {
   fill: #323232;
 }
 
-.login-link .login:hover polygon,
-.login-link .login:focus polygon {
+.login:hover polygon,
+.login:focus polygon {
   fill: #323232;
 }
 
@@ -953,7 +949,7 @@ input[type="radio"] {
 }
 
 .about-us-wrapper p::before {
-  content: "";
+  content: " ";
 
   position: absolute;
   top: -15px;
@@ -1043,6 +1039,7 @@ input[type="radio"] {
   margin: 0;
   padding: 0;
   width: 560px;
+  
   background-color: #f8f7f4;
   border: 6px solid transparent;
   -webkit-border-image: url(../img/mail-background.svg) 5 round round;
@@ -1101,7 +1098,6 @@ input[type="radio"] {
   position: relative;
   padding: 0;
   margin: 0;
-
 }
 
 .map-container {
@@ -1842,7 +1838,7 @@ input[type="radio"] {
   border-radius: 5px;
 }
 
-.product-catalog-list .catalog-item:hover .button-view {
+.catalog-item:hover .button-view {
   position: absolute;
   top: 333px;
   left: 34px;
@@ -1857,11 +1853,11 @@ input[type="radio"] {
   border-radius: 20px;
 }
 
-.product-catalog-list .catalog-item:hover .button-view:hover {
+.catalog-item:hover .button-view:hover {
   background-color: #f38267;
 }
 
-.product-catalog-list .catalog-item:hover .button-view:focus {
+.catalog-item:hover .button-view:focus {
   background-color: #d94d35;
 }
 
