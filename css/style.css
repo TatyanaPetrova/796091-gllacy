@@ -94,10 +94,14 @@ input[type="radio"] {
   color: #ffffff;
 }
 
+.main-header-logo img {
+  margin-right: 9px;
+}
+
 .site-navigation-item > a {
   display: block;
-  padding-left: 14px;
-  padding-right: 14px;
+  padding-left: 15px;
+  padding-right: 10px;
   padding-bottom: 8px;
   padding-top: 8px;
   text-align: center;
@@ -1179,7 +1183,7 @@ input[type="radio"] {
 }
 
 .footer-catalog {
-  border-top: 1px solid rgba(255, 255, 255, .5);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .social-list {
@@ -1262,19 +1266,36 @@ input[type="radio"] {
 
 /*-----обратная связь------*/
 
+@keyframes bounce {
+  0% {
+    transform: translate(-1200px, -50%);
+  }
+
+  100% {
+    transform: translate(0, -50%);
+  }
+}
+
+@keyframes error {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .modal {
   position: fixed;
   z-index: 100;
   display: none;
 }
 
-.modal-feedback {
-  top: 340px;
+.modal-feedback { 
+  top: 50%;
   left: 50%;
   width: 480px;
   padding: 0;
   margin: 0;
   margin-left: -240px;
+  transform: translateY(-50%);
 
   border: 1px solid #f8f7f4;
   border-radius: 10px;
@@ -1385,6 +1406,15 @@ input[type="radio"] {
 
 .modal-show {
   display: block;
+  animation: bounce 0.6s;
+}
+
+.overlay-show {
+  display: block;
+}
+
+.modal-error {
+  animation: error 0.6s;
 }
 
 /*------каталог------*/
@@ -1498,8 +1528,8 @@ input[type="radio"] {
   position: relative;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  margin-right: 15px;
-  padding: 7px 10px;
+  margin-right: 17px;
+  padding: 7px 12px;
 
   border-radius: 20px;
   color: #ffffff;
@@ -1581,7 +1611,7 @@ input[type="radio"] {
 .switch-min {
   position: absolute;
   top: -8px;
-  left: 16px;
+  left: 12px;
   width: 4px;
   height: 4px;
   background-color: #ababab;
@@ -1593,7 +1623,7 @@ input[type="radio"] {
 .switch-max {
   position: absolute;
   top: -8px;
-  left: 113px;
+  left: 110px;
   width: 4px;
   height: 4px;
   background-color: #ababab;
@@ -1605,8 +1635,8 @@ input[type="radio"] {
 .filter-button {
   margin: 0;
   margin-top: 20px;
-  margin-left: 12px;
-  padding: 7px 30px;
+  margin-left: 13px;
+  padding: 7px 27px;
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
@@ -1647,7 +1677,7 @@ input[type="radio"] {
 .fat-wrapper {
   box-sizing: border-box;
   height: 36px;
-  padding: 7px 12px;
+  padding: 7px 3px;
   background-color: #a9b9af;
   border-radius: 25px;
 }
@@ -1666,7 +1696,7 @@ input[type="radio"] {
 .fat-content label::before {
   content: " ";
   position: absolute;
-  left: -27px;
+  left: -24px;
   top: 2px;
   width: 16px;
   height: 16px;
@@ -1677,7 +1707,7 @@ input[type="radio"] {
 .fat-content label:hover::before {
   content: " ";
   position: absolute;
-  left: -27px;
+  left: -24px;
   top: 2px;
   width: 16px;
   height: 16px;
@@ -1689,7 +1719,7 @@ input[type="radio"] {
   content: " ";
   position: absolute;
   top: 9px;
-  left: -20px;
+  left: -17px;
   width: 8px;
   height: 8px;
   background-color: rgba(255, 255, 255, 1);
@@ -1700,7 +1730,7 @@ input[type="radio"] {
   content: " ";
   position: absolute;
   top: 9px;
-  left: -20px;
+  left: -17px;
   width: 8px;
   height: 8px;
   background-color: rgba(255, 255, 255, 0.7);
@@ -1708,7 +1738,7 @@ input[type="radio"] {
 }
 
 .additive-wrapper {
-  padding-right: 17px;
+  padding-right: 15px;
   border-radius: 15px;
   background-color: #a9b9af;
 }
@@ -1721,7 +1751,8 @@ input[type="radio"] {
 .fillers-item {
   padding-top: 7px;
   padding-bottom: 7px;
-  padding-left: 55px;
+  padding-left: 51px;
+  padding-right: 1px;
 }
 
 .fillers-item input {
@@ -1814,10 +1845,10 @@ input[type="radio"] {
 }
 
 .product-catalog-list img {
-  z-index: 10;
+  z-index: 0;
   width: 267px;
   height: 267px;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
 }
 
 /*-----быстрый просмотр---*/
@@ -1829,12 +1860,12 @@ input[type="radio"] {
 .product-catalog-list .catalog-item:hover::after {
   content: '';
   position: absolute;
-  z-index: -1;
+  z-index: 10;
   left: -13px;
   top: -10px;
   width: 293px;
   height: 405px;
-  background-color: #9bafa3;
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 5px;
 }
 
