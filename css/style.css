@@ -1193,6 +1193,7 @@ input[type="radio"] {
 }
 
 .footer-catalog {
+  padding-top: 10px;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
 
@@ -1229,6 +1230,7 @@ input[type="radio"] {
   padding: 0;
   margin: 0;
   margin-top: 13px;
+  margin-left: 15px;
 }
 
 .documents-list a {
@@ -1262,6 +1264,7 @@ input[type="radio"] {
 }
 
 .footer-copyright {
+  padding-right: 10px;
   font-size: 12px;
   line-height: 18px;
 }
@@ -1919,7 +1922,7 @@ input[type="radio"] {
   padding: 0;
   margin: 0;
   margin-top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   margin-right: 40px;
 }
 
