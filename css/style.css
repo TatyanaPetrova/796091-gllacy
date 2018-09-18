@@ -102,7 +102,6 @@ input[type="radio"] {
   position: relative;
 }
 
-
 .site-navigation-item > a {
   display: block;
   padding-left: 15px;
@@ -163,6 +162,16 @@ input[type="radio"] {
   border-radius: 5px;
   color: #323232;
   background-color: #f8f7f4;
+}
+
+.subtitle-currently::after,
+.subtitle::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 10px;
+  top: 30px;
+  left: 15px;
 }
 
 .subtitle:hover ~ .catalog-list,
