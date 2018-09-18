@@ -19,34 +19,35 @@
           <a class="subtitle" href="#"><span class="underline">Каталог</span></a>
           <div class="link-wrap"></div>
           <ul class="catalog-list">
-            <li class="catalog-item">
-              <a href="">Новинки</a>
+            <li class="main-catalog-item">
+              <a href="#" class="main-catalog-link">Новинки</a>
             </li>
-            <li class="catalog-item">
+            <li class=" main-catalog-item">
               <a href="catalog.html">Сливочное
               </a>
             </li>
-            <li class="catalog-item">
-              <a href="">Щербеты</a></li>
-            <li class="catalog-item">
-              <a href="">Фруктовый лед</a>
+            <li class="main-catalog-item">
+              <a href="#">Щербеты</a>
             </li>
-            <li class="catalog-item">
-              <a href="">Мелорин  </a>
+            <li class="main-catalog-item">
+              <a href="#">Фруктовый лед</a>
+            </li>
+            <li class="main-catalog-item">
+              <a href="#">Мелорин</a>
             </li>
           </ul>
         </li>
         <li class="site-navigation-item">
-          <a href=""><span class="underline">Доставка и оплата</span></a>
+          <a href="#"><span class="underline">Доставка и оплата</span></a>
         </li>
         <li class="site-navigation-item">
-          <a href=""><span class="underline">О Компании</span></a>
+          <a href="#"><span class="underline">О Компании</span></a>
         </li>
       </ul>
       <div class="user-navigation-wrapper">
         <ul class="user-navigation navigation">
           <li class="search">
-            <button type="button">
+            <a class="search-button" href="#">
               <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17px"
 	          height="17px" viewBox="0 0 17 17" enable-background="new 0 0 17 17" xml:space="preserve">
                 <g>
@@ -57,7 +58,7 @@
               </svg>
               
               <span class="visually-hidden">Поиск</span>
-            </button>
+            </a>
             <div class="link-wrap"></div>
             <div class="search-wrapper">
               <form class="search-form" method="post">
@@ -97,8 +98,8 @@
                   <button class="button" type="submit">Войти</button>
 
                   <p>
-                    <a href="">Забыли пароль?</a>
-                    <a href="">Новая регистрация</a>
+                    <a href="#">Забыли пароль?</a>
+                    <a href="#">Новая регистрация</a>
                   </p>
                 </div>
               </form>
@@ -193,11 +194,11 @@
         </ul>
       </section>
 
-      <section class="hit-sales features">
+      <section class="hit-sales features ">
         <h2 class="visually-hidden">
           Хиты продаж</h2>
-        <ul class="hit-sales-list">
-          <li class="hit-sales-item">
+        <ul class="product-catalog-list hit-sales-list">
+          <li class="catalog-item">
             <img src="img/creamy-ice-cream-with-orange-jam-and-citrus-chips.png" alt="Сливочное мороженное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
             <a href="#">
               <h3 class="item-title"><span class="underline">Сливочное с апельсиновым джемом и цитрусовой стружкой</span></h3>
@@ -224,9 +225,10 @@
 		        C47.86,18.434,48.672,17.497,47.32,17.66z"/>
               </g>
             </svg>
+            <a class="button-view button" href="#">Быстрый просмотр</a>
           </li>
 
-          <li class="hit-sales-item">
+          <li class="catalog-item">
             <img src="img/creamy-coffee-ice-cream-with-chocolate-pieces.png" alt="Сливочно-кофейное мороженное с кусочками шоколада " width="267" height="267">
             <a href="#">
               <h3 class="item-title"><span class="underline">Сливочно-кофейное с кусочками шоколада</span></h3>
@@ -254,9 +256,10 @@
 		    C47.86,18.434,48.672,17.497,47.32,17.66z"/>
               </g>
             </svg>
+            <a class="button-view button" href="#">Быстрый просмотр</a>
           </li>
 
-          <li class="hit-sales-item">
+          <li class="catalog-item">
             <img src="img/creamy-strawberry-ice-cream-with-white-chocolate-powder.png" alt="Сливочно-клубничное мороженное с присыпкой из белого шоколада" width="267" height="267">
             <a href="#">
               <h3 class="item-title"><span class="underline">Сливочно-клубничное с присыпкой из белого шоколада</span></h3>
@@ -284,9 +287,10 @@
 		        C47.86,18.434,48.672,17.497,47.32,17.66z"/>
               </g>
             </svg>
+            <a class="button-view button" href="#">Быстрый просмотр</a>
           </li>
 
-          <li class="hit-sales-item">
+          <li class="catalog-item">
             <img src="img/creamy-ice-cream-with-caramel-sauce.png" alt="Сливочное мороженное крем-брюле с карамельной подливкой" width="267" height="267">
             <a href="#">
               <h3 class="item-title"><span class="underline">Сливочное крем-брюле с карамельной подливкой</span></h3>
@@ -314,6 +318,7 @@
 		        C47.86,18.434,48.672,17.497,47.32,17.66z"/>
               </g>
             </svg>
+            <a class="button-view button" href="#">Быстрый просмотр</a>
           </li>
         </ul>
       </section>
@@ -365,9 +370,10 @@
         <div class="contacts-wrapper">
           <h2 class="visually-hidden">Как нас найти</h2>
           <div class="contacts">
-            <p class="adress">
-              Адрес главного офиса<br> и офлайн-магазина:<br>
-              <span class="contact">ул. Большая Конюшенная<br>
+            <p class="address">
+              <span>Адрес главного офиса
+              и офлайн-магазина:</span>
+              <span class="contact">ул. Большая Конюшенная
               19/8, Санкт-Петербург</span>
             </p>
             <p class="order">
@@ -376,7 +382,7 @@
               <span class="contact-time">(с 10 до 20 ежедневно)</span>
             </p>
           </div>
-          <a class="feedback button" href="">Форма обратной связи</a>
+          <a class="feedback button" href="#">Форма обратной связи</a>
         </div>
         <svg version="1.1" x="0px" y="0px" width="80px" height="140px" viewBox="0 0 80 140" enable-background="new 0 0 80 140" xml:space="preserve">
           <g>
@@ -523,8 +529,7 @@
         </li>
       </ul>
       <p class="footer-copyright">
-        <a class="logo" href="https://htmlacademy.ru/intensive/htmlcss"> <img src="img/html-academy.svg" width="120" height="39" alt="Логотип HTML академии"></a><br> Сделано в
-        <a class="copyright-link" href="https://htmlacademy.ru/intensive/htmlcss"><span class="underline">HTML Academy</span>
+        <a class="logo" href="https://htmlacademy.ru/intensive/htmlcss"> <img src="img/html-academy.svg" width="120" height="39" alt="Логотип HTML академии"></a> Сделано в <a class="copyright-link" href="https://htmlacademy.ru/intensive/htmlcss"><span class="underline">HTML Academy</span>
         </a>2017
       </p>
     </div>
@@ -537,18 +542,18 @@
     <form class="feedback-form" method="post">
 
       <p>
-        <label class="visually-hidden" for="user-name">Ваше имя</label>
         <input class="feedback-user-name" type="text" name="user-name" id="user-name" placeholder="Как вас зовут?">
+        <label class="visually-hidden" for="user-name">Ваше имя</label>
       </p>
 
       <p>
-        <label class="visually-hidden" for="user-mail">Ваша почта</label>
         <input class="feedback-user-mail" type="text" name="user-mail" id="user-mail" placeholder="Ваша почта для ответа?">
+        <label class="visually-hidden" for="user-mail">Ваша почта</label>
       </p>
 
       <p>
-        <label class="visually-hidden" for="user-comment">Ваш отзыв</label>
         <textarea class="feedback-user-comment" name="user-comment" id="user-comment" rows="7" placeholder="Напишите что-нибудь..."></textarea>
+        <label class="visually-hidden" for="user-comment">Ваш отзыв</label>
       </p>
 
       <button class="button modal-feedback-button" type="submit">Отправить</button>

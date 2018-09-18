@@ -3,7 +3,7 @@ body {
   padding: 0;
   min-width: 1200px;
 
-  font-family: 'Roboto', "Arial", sans-serif;
+  font-family: 'Roboto', 'Arial', sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
@@ -98,6 +98,11 @@ input[type="radio"] {
   margin-right: 9px;
 }
 
+.site-navigation-item {
+  position: relative;
+}
+
+
 .site-navigation-item > a {
   display: block;
   padding-left: 15px;
@@ -150,11 +155,14 @@ input[type="radio"] {
 
 .catalog-list {
   position: absolute;
-  top: 65px;
+  top: 40px;
+  left: -3px;
   z-index: 10;
   display: none;
   width: 143px;
   padding: 0;
+  padding-bottom: 3px;
+  padding-top: 3px;
   margin: 0;
 
   border-radius: 5px;
@@ -162,18 +170,18 @@ input[type="radio"] {
   background-color: #f8f7f4;
 }
 
-.catalog .link-wrap:hover + .catalog-list,
-.catalog .link-wrap:focus + .catalog-list {
+.link-wrap:hover + .catalog-list,
+.link-wrap:focus + .catalog-list {
   display: block;
 }
 
-.catalog .subtitle:hover ~ .catalog-list,
-.catalog .subtitle:focus ~ .catalog-list {
+.subtitle:hover ~ .catalog-list,
+.subtitle:focus ~ .catalog-list {
   display: block;
 }
 
-.catalog .subtitle-currently:hover ~ .catalog-list,
-.catalog .subtitle-currently:focus ~ .catalog-list {
+.subtitle-currently:hover ~ .catalog-list,
+.subtitle-currently:focus ~ .catalog-list {
   display: block;
 }
 
@@ -182,11 +190,11 @@ input[type="radio"] {
   display: block;
 }
 
-.catalog-item a {
+.main-catalog-item a {
   display: block;
   padding-left: 20px;
-  padding-bottom: 10px;
-  padding-top: 10px;
+  padding-bottom: 9px;
+  padding-top: 8px;
 
   font-size: 14px;
   line-height: 16px;
@@ -194,17 +202,17 @@ input[type="radio"] {
   color: #323232;
 }
 
-.catalog-list li:first-of-type a {
+.catalog-list .main-catalog-link {
   font-weight: 700;
   border-bottom: 1px solid #d3d3d2;
 }
 
-.catalog-list li:not(:first-child) a:hover {
+.catalog-list a:hover:not(.currently) {
   color: #323232;
   background-color: #fbded7;
 }
 
-.catalog-list li:not(:first-child) a:focus {
+.catalog-list a:focus:not(.currently) {
   color: #323232;
   background-color: #f6b5a5;
 }
@@ -276,7 +284,7 @@ input[type="radio"] {
   position: relative;
 }
 
-.search button {
+.search .search-button {
   padding: 0;
   border: 0;
   width: 32px;
@@ -297,14 +305,14 @@ input[type="radio"] {
   border-radius: 10px;
 }
 
-.search button:hover,
-.search button:focus {
+.search .search-button:hover,
+.search .search-button:focus {
   color: #323232;
   background-color: #f8f7f4;
 }
 
-.search button:hover path,
-.search button:focus path {
+.search .search-button:hover path,
+.search .search-button:focus path {
   fill: #323232;
 }
 
@@ -333,8 +341,24 @@ input[type="radio"] {
   -1px -1px 0px #d3d3d2;
 }
 
+.search-form input:focus {
+  outline: none;
+  -webkit-box-shadow: 2px 2px 0px,
+  -2px -2px 0px #8fbdec;
+  box-shadow: 2px 0px 0px #8fbdec,
+  -2px 0px 0px #8fbdec,
+  0px 2px 0px #8fbdec,
+  0px -2px 0px #8fbdec
+}
+
 .search-form input:focus + label {
   font-size: 0;
+}
+
+.search-button svg {
+  position: absolute;
+  top: 8px;
+  left: 18px;
 }
 
 /*-----Вход-----*/
@@ -345,17 +369,27 @@ input[type="radio"] {
 
 .login-box {
   position: absolute;
-  right: 0px;
-  top: 40px;
+  right: 15px;
+  top: 38px;
   z-index: 30;
   display: none;
   border-radius: 10px;
+  background-color: #f8f7f4;
+}
+
+.login-form p {
+  margin: 0;
+  padding: 0;
 }
 
 .login-box input {
+  box-sizing: border-box;
   width: 240px;
-  padding: 10px 13px;
-  margin: 10px 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 17px;
+  padding: 13px 12px;
+
   border: 1px solid #d3d3d2;
   border-radius: 5px;
 }
@@ -365,6 +399,16 @@ input[type="radio"] {
   -1px -1px 0px #d3d3d2;
   box-shadow: 1px 1px 0px #d3d3d2,
   -1px -1px 0px #d3d3d2;
+}
+
+.login-box input:focus {
+  outline: none;
+  -webkit-box-shadow: 2px 2px 0px,
+  -2px -2px 0px #8fbdec;
+  box-shadow: 2px 0px 0px #8fbdec,
+  -2px 0px 0px #8fbdec,
+  0px 2px 0px #8fbdec,
+  0px -2px 0px #8fbdec
 }
 
 .login:hover,
@@ -386,7 +430,6 @@ input[type="radio"] {
 .login-link:hover .login-box,
 .login-link:focus .login-box {
   display: block;
-  background-color: #f8f7f4;
 }
 
 .login-link svg {
@@ -403,6 +446,7 @@ input[type="radio"] {
   -ms-flex-align: start;
   align-items: flex-start;
   margin-bottom: 20px;
+  margin-top: 19px;
 }
 
 /*-----кнопка-------*/
@@ -431,10 +475,10 @@ input[type="radio"] {
 /*---------------------------*/
 
 .login-form button {
-  padding: 10px 23px;
+  padding: 10px 26px;
   margin-left: 17px;
   border-radius: 20px;
-  margin-right: 20px;
+  margin-right: 21px;
 }
 
 .login-inner p {
@@ -532,6 +576,7 @@ input[type="radio"] {
   margin-bottom: 20px;
   padding: 10px 15px;
   text-align: center;
+  vertical-align: middle;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -704,6 +749,7 @@ input[type="radio"] {
   padding-bottom: 13px;
   padding-right: 40px;
   padding-left: 40px;
+  vertical-align: middle;
   font-size: 32px;
   line-height: 44px;
   font-weight: 700;
@@ -739,6 +785,7 @@ input[type="radio"] {
   height: 17px;
   margin-right: 8px;
   vertical-align: top;
+  text-align: center;
 
   background-color: transparent;
   border: 2px solid #ffffff;
@@ -811,6 +858,7 @@ input[type="radio"] {
   margin: 0;
   margin-left: 375px;
   margin-bottom: 23px;
+  vertical-align: middle;
 
   border-radius: 20px;
   color: #ffffff;
@@ -849,25 +897,24 @@ input[type="radio"] {
 
 /*-----Хиты продаж-----*/
 
-.hit-sales-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding: 0;
-  margin: 0;
-}
-
-.hit-sales-item {
-  position: relative;
-  width: 267px;
-  text-align: center;
+.main-wrapper .hit-sales {
+  margin-bottom: 8px;
 }
 
 .hit-sales-list img {
   margin-bottom: 5px;
+}
+
+.catalog-item a {
+  position: relative;
+  z-index: 20;
+  display: block;
+  padding-bottom: 10px;
+
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #323232;
 }
 
 .item-price {
@@ -899,7 +946,7 @@ input[type="radio"] {
   color: #ffbc9e;
 }
 
-.hit-sales-item svg {
+.catalog-item svg {
   position: absolute;
   top: 0;
   left: 0;
@@ -1085,6 +1132,16 @@ input[type="radio"] {
   -1px -1px 0px #d3d3d2;
 }
 
+.subscription-form .subscription-mail:focus {
+  outline: none;
+  -webkit-box-shadow: 2px 2px 0px,
+  -2px -2px 0px #8fbdec;
+  box-shadow: 2px 0px 0px #8fbdec,
+  -2px 0px 0px #8fbdec,
+  0px 2px 0px #8fbdec,
+  0px -2px 0px #8fbdec
+}
+
 .subscription-mail:focus + label {
   font-size: 0;
 }
@@ -1093,6 +1150,7 @@ input[type="radio"] {
   display: inline-block;
   padding: 9px 18px;
   margin-left: 7px;
+  vertical-align: middle;
   border-radius: 30px;
 }
 
@@ -1128,13 +1186,23 @@ input[type="radio"] {
   color: #323232;
 }
 
-.contacts .adress,
-.contacts .order {
-  margin-top: 26px;
+.contacts .address {
+  margin-top: 28px;
   margin-left: 26px;
 }
 
+.contacts .order {
+  margin-top: 22px;
+  margin-left: 26px;
+}
+
+.address span {
+  display: block;
+  margin-right: 125px;
+}
+
 .contact {
+  width: 230px;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -1144,10 +1212,12 @@ input[type="radio"] {
   display: inline-block;
   margin-left: 25px;
   margin-bottom: 30px;
-  margin-top: 15px;
+  margin-top: 13px;
   padding: 10px 30px;
+  text-align: center;
+  vertical-align: middle;
 
-  border-radius: 20px;
+  border-radius: 25px;
   color: #ffffff;
   background-color: #ea543a;
 }
@@ -1237,7 +1307,7 @@ input[type="radio"] {
   display: block;
   margin: 0;
   padding: 0;
-  margin-bottom: 6px;
+  margin-bottom: 3px;
   width: 182px;
   font-size: 13px;
   line-height: 18px;
@@ -1264,7 +1334,8 @@ input[type="radio"] {
 }
 
 .footer-copyright {
-  padding-right: 10px;
+  padding-right: 9px;
+  width: 180px;
   font-size: 12px;
   line-height: 18px;
 }
@@ -1275,6 +1346,10 @@ input[type="radio"] {
 
 .copyright-link:hover {
   color: #e6b69b;
+}
+
+.logo {
+  display: block;
 }
 
 /*-----обратная связь------*/
@@ -1343,6 +1418,17 @@ input[type="radio"] {
   -1px -1px 0px #d3d3d2;
 }
 
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+ outline: none;
+  -webkit-box-shadow: 2px 2px 0px,
+  -2px -2px 0px #8fbdec;
+  box-shadow: 2px 0px 0px #8fbdec,
+  -2px 0px 0px #8fbdec,
+  0px 2px 0px #8fbdec,
+  0px -2px 0px #8fbdec
+}
+
 .feedback-form input {
   width: 265px;
 }
@@ -1363,6 +1449,7 @@ input[type="radio"] {
   margin-left: 315px;
   margin-bottom: 10px;
   margin-top: 5px;
+  vertical-align: middle;
   border-radius: 20px;
 }
 
@@ -1428,6 +1515,11 @@ input[type="radio"] {
 
 .modal-error {
   animation: error 0.6s;
+}
+
+.feedback-form input + label,
+.feedback-form textarea + label {
+  font-size: 0;
 }
 
 /*------каталог------*/
@@ -1533,10 +1625,6 @@ input[type="radio"] {
   line-height: 16px;
 }
 
-.filter-form legend:hover {
-  color: #323232;
-}
-
 .sort-back {
   position: relative;
   -webkit-box-sizing: border-box;
@@ -1572,7 +1660,7 @@ input[type="radio"] {
 
 .sorting svg {
   position: absolute;
-  right: 11px;
+  right: 15px;
   top: 14px;
   z-index: 1;
   -webkit-box-sizing: border-box;
@@ -1580,7 +1668,12 @@ input[type="radio"] {
   overflow: hidden;
 }
 
-.filter-form select:focus {
+ select:hover + svg polyline {
+  fill: #323232;
+}
+
+.filter-form select:focus,
+.filter-form select:hover {
   padding-right: 25px;
   color: #323232;
   background-color: transparent;
@@ -1648,8 +1741,8 @@ input[type="radio"] {
 .filter-button {
   margin: 0;
   margin-top: 20px;
-  margin-left: 13px;
-  padding: 7px 27px;
+  margin-left: 15px;
+  padding: 7px 28px;
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
@@ -1664,7 +1757,8 @@ input[type="radio"] {
 }
 
 .filter-button:focus {
-  border: 0;
+  color: #323232; 
+  border: 2px solid #eaeaea;
   background-color: #eaeaea;
   -webkit-box-shadow: 0px -2px 1px #323232;
   box-shadow: 0px -2px 1px #323232;
@@ -1685,6 +1779,7 @@ input[type="radio"] {
 
 .fat-item {
   display: inline-block;
+  vertical-align: middle;
 }
 
 .fat-wrapper {
@@ -1701,7 +1796,8 @@ input[type="radio"] {
 
 .fat-content label {
   position: relative;
-  margin-left: 30px;
+  margin-left: 29px;
+  top: -1px;
   padding: 2px 9px;
   cursor: pointer;
 }
@@ -1781,9 +1877,9 @@ input[type="radio"] {
 .fillers-item label::before {
   content: "";
   position: absolute;
-  left: -36px;
-  top: 0px;
-  width: 19px;
+  left: -37px;
+  top: -2px;
+  width: 17px;
   height: 17px;
   border: 2px solid rgba(255, 255, 255, 0.7);
   border-radius: 4px;
@@ -1792,9 +1888,9 @@ input[type="radio"] {
 .fillers-item label:hover::before {
   content: "";
   position: absolute;
-  top: 0px;
-  left: -36px;
-  width: 19px;
+  top: -2px;
+  left: -37px;
+  width: 17px;
   height: 17px;
   border: 2px solid rgba(255, 255, 255, 1);
   border-radius: 4px;
@@ -1803,8 +1899,8 @@ input[type="radio"] {
 .filter-input-checkbox:checked + label::after {
   content: "";
   position: absolute;
-  top: 0px;
-  left: -36px;
+  top: -2px;
+  left: -39px;
   width: 24px;
   height: 17px;
   background-image: url(../img/checkbox-on.svg);
@@ -1817,8 +1913,8 @@ input[type="radio"] {
 .filter-input-checkbox:checked + label:hover::after {
   content: "";
   position: absolute;
-  top: 0 px;
-  left: -36px;
+  top: -2px;
+  left: -39px;
   width: 24px;
   height: 17px;
   background-image: url(../img/checkbox-on.svg);
@@ -1829,6 +1925,10 @@ input[type="radio"] {
 }
 
 /*---каталог мороженного----*/
+
+.product-catalog {
+  margin-bottom: 28px;
+}
 
 .product-catalog-list {
   display: -webkit-box;
@@ -1890,6 +1990,7 @@ input[type="radio"] {
   z-index: 30;
   display: inline-block;
   padding: 10px 16px;
+  vertical-align: middle;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -1913,6 +2014,8 @@ input[type="radio"] {
   text-align: center;
 }
 
+
+
 /*----страницы-----*/
 
 .paginator-wrapper {
@@ -1922,7 +2025,6 @@ input[type="radio"] {
   padding: 0;
   margin: 0;
   margin-top: 40px;
-  margin-bottom: 30px;
   margin-right: 40px;
 }
 
@@ -1963,6 +2065,7 @@ input[type="radio"] {
 .pagination-list a {
   display: inline-block;
   padding: 2px 8px;
+  vertical-align: middle;
   border-radius: 50%;
   color: #ffffff;
 }
@@ -1972,7 +2075,6 @@ input[type="radio"] {
   background-color: #ffffff;
 }
 
-.pagination-list a:hover {
-  color: #323232;
+.pagination-list a:hover:not(.current-link) {
   background-color: #9db1a5;
 }
