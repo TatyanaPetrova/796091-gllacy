@@ -140,7 +140,6 @@ input[type="radio"] {
 .catalog .subtitle-currently {
   color: #ffffff;
   background-color: #d07058;
-
 }
 
 .catalog .subtitle-currently {
@@ -230,10 +229,14 @@ input[type="radio"] {
 
 .user-navigation {
   margin-left: auto;
-  margin-bottom: 8px;
+  margin-bottom: 17px;
 
   font-size: 14px;
   line-height: 16px;
+}
+
+.user-navigation li {
+  margin-left: -2px;
 }
 
 .user-navigation a {
@@ -365,8 +368,8 @@ input[type="radio"] {
 
 .search-button svg {
   position: absolute;
-  top: 8px;
-  left: 18px;
+  top: 7px;
+  left: 17px;
 }
 
 /*-----Вход-----*/
@@ -452,7 +455,7 @@ input[type="radio"] {
 .login-link svg {
   position: absolute;
   top: 6px;
-  left: 25px;
+  left: 27px;
 }
 
 .login-inner {
@@ -1446,7 +1449,7 @@ input[type="radio"] {
 
 .feedback-form input:focus,
 .feedback-form textarea:focus {
- outline: none;
+  outline: none;
   -webkit-box-shadow: 2px 2px 0px,
   -2px -2px 0px #8fbdec;
   box-shadow: 2px 0px 0px #8fbdec,
@@ -1694,7 +1697,7 @@ input[type="radio"] {
   overflow: hidden;
 }
 
- select:hover + svg polyline {
+select:hover + svg polyline {
   fill: #323232;
 }
 
@@ -1783,7 +1786,7 @@ input[type="radio"] {
 }
 
 .filter-button:focus {
-  color: #323232; 
+  color: #323232;
   border: 2px solid #eaeaea;
   background-color: #eaeaea;
   -webkit-box-shadow: 0px -2px 1px #323232;
@@ -1798,14 +1801,15 @@ input[type="radio"] {
 }
 
 .fat-list {
+  display: flex;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
 .fat-item {
-  display: inline-block;
-  vertical-align: middle;
+  margin-left: 3px;
 }
 
 .fat-wrapper {
@@ -1879,15 +1883,16 @@ input[type="radio"] {
 }
 
 .fillers-list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
 
 .fillers-item {
+  margin-left: 52px;
   padding-top: 7px;
   padding-bottom: 7px;
-  padding-left: 51px;
-  padding-right: 1px;
 }
 
 .fillers-item input {
@@ -2039,8 +2044,6 @@ input[type="radio"] {
   margin: 0;
   text-align: center;
 }
-
-
 
 /*----страницы-----*/
 
