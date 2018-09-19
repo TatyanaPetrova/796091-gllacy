@@ -390,7 +390,7 @@ input[type="radio"] {
 .login-box {
   position: absolute;
   right: 15px;
-  top: 38px;
+  top: 37px;
   z-index: 30;
   display: none;
   border-radius: 10px;
@@ -407,7 +407,7 @@ input[type="radio"] {
   width: 240px;
   margin-top: 20px;
   margin-left: 20px;
-  margin-right: 17px;
+  margin-right: 20px;
   padding: 13px 12px;
 
   border: 1px solid #d3d3d2;
@@ -513,6 +513,7 @@ input[type="radio"] {
   -ms-flex-align: start;
   align-items: flex-start;
   margin: 0;
+  margin-top: -4px;
   padding: 0;
 }
 
@@ -948,7 +949,7 @@ input[type="radio"] {
 
 .item-price {
   position: absolute;
-  top: 164px;
+  top: 162px;
   left: 0;
   z-index: 20;
 
@@ -958,7 +959,7 @@ input[type="radio"] {
 }
 
 .weight {
-  font-size: 35px;
+  font-size: 28px;
   line-height: 45px;
   font-weight: 700;
 }
@@ -966,6 +967,7 @@ input[type="radio"] {
 .item-title {
   width: 256px;
   margin: 0;
+  padding-left: 6px;
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
@@ -1213,12 +1215,13 @@ input[type="radio"] {
 }
 
 .contacts .address {
-  margin-top: 28px;
+  margin-top: 26px;
   margin-left: 26px;
 }
 
 .contacts .order {
-  margin-top: 22px;
+  width: 170px;
+  margin-top: 18px;
   margin-left: 26px;
 }
 
@@ -1228,17 +1231,23 @@ input[type="radio"] {
 }
 
 .contact {
+  display: block;
+  margin-top: 3px;
   width: 230px;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
 }
 
+.contact-time {
+  display: block;
+}
+
 .feedback {
   display: inline-block;
   margin-left: 25px;
   margin-bottom: 30px;
-  margin-top: 13px;
+  margin-top: 11px;
   padding: 10px 30px;
   text-align: center;
   vertical-align: middle;
@@ -1325,7 +1334,7 @@ input[type="radio"] {
   width: 324px;
   padding: 0;
   margin: 0;
-  margin-top: 13px;
+  margin-top: 9px;
   margin-left: 15px;
 }
 
@@ -1603,7 +1612,7 @@ input[type="radio"] {
 .page-title {
   padding: 0;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 22px;
   font-size: 35px;
   line-height: 41px;
   font-weight: 700;
@@ -1612,7 +1621,7 @@ input[type="radio"] {
 /*------форма-----*/
 
 .filter {
-  margin-bottom: -10px;
+  margin-bottom: -7px;
 }
 
 .filter-form {
@@ -1645,8 +1654,8 @@ input[type="radio"] {
 }
 
 .filter-form legend {
-  margin-bottom: 5px;
-  margin-left: 16px;
+  margin-bottom: 6px;
+  margin-left: 14px;
   font-size: 14px;
   line-height: 16px;
 }
@@ -1656,7 +1665,7 @@ input[type="radio"] {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin-right: 17px;
-  padding: 7px 12px;
+  padding: 7px 9px 7px 16px;
 
   border-radius: 20px;
   color: #ffffff;
@@ -1767,7 +1776,7 @@ select:hover + svg polyline {
 .filter-button {
   margin: 0;
   margin-top: 20px;
-  margin-left: 15px;
+  margin-left: 12px;
   padding: 7px 28px;
   font-size: 16px;
   line-height: 18px;
@@ -1802,6 +1811,7 @@ select:hover + svg polyline {
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
+  margin-top: 2px;
   list-style: none;
 }
 
@@ -1832,8 +1842,8 @@ select:hover + svg polyline {
 .fat-content label::before {
   content: " ";
   position: absolute;
-  left: -24px;
-  top: 2px;
+  left: -22px;
+  top: 1px;
   width: 16px;
   height: 16px;
   border: 3px solid rgba(255, 255, 255, 0.7);
@@ -1843,8 +1853,8 @@ select:hover + svg polyline {
 .fat-content label:hover::before {
   content: " ";
   position: absolute;
-  left: -24px;
-  top: 2px;
+  left: -22px;
+  top: 1px;
   width: 16px;
   height: 16px;
   border: 3px solid rgba(255, 255, 255, 1);
@@ -1854,8 +1864,8 @@ select:hover + svg polyline {
 .content input:checked + label:hover::after {
   content: " ";
   position: absolute;
-  top: 9px;
-  left: -17px;
+  top: 8px;
+  left: -15px;
   width: 8px;
   height: 8px;
   background-color: rgba(255, 255, 255, 1);
@@ -1865,8 +1875,8 @@ select:hover + svg polyline {
 .content input:checked + label::after {
   content: " ";
   position: absolute;
-  top: 9px;
-  left: -17px;
+  top: 8px;
+  left: -15px;
   width: 8px;
   height: 8px;
   background-color: rgba(255, 255, 255, 0.7);
@@ -1887,7 +1897,7 @@ select:hover + svg polyline {
 }
 
 .fillers-item {
-  margin-left: 52px;
+  margin-left: 48px;
   padding-top: 7px;
   padding-bottom: 7px;
 }
@@ -1898,6 +1908,7 @@ select:hover + svg polyline {
 
 .fillers-item label {
   position: relative;
+  margin-right: 5px;
   cursor: pointer;
   text-decoration: none;
 }
@@ -1905,7 +1916,7 @@ select:hover + svg polyline {
 .fillers-item label::before {
   content: "";
   position: absolute;
-  left: -37px;
+  left: -33px;
   top: -2px;
   width: 17px;
   height: 17px;
@@ -1917,7 +1928,7 @@ select:hover + svg polyline {
   content: "";
   position: absolute;
   top: -2px;
-  left: -37px;
+  left: -33px;
   width: 17px;
   height: 17px;
   border: 2px solid rgba(255, 255, 255, 1);
@@ -1928,7 +1939,7 @@ select:hover + svg polyline {
   content: "";
   position: absolute;
   top: -2px;
-  left: -39px;
+  left: -35px;
   width: 24px;
   height: 17px;
   background-image: url(../img/checkbox-on.svg);
@@ -1942,7 +1953,7 @@ select:hover + svg polyline {
   content: "";
   position: absolute;
   top: -2px;
-  left: -39px;
+  left: -35px;
   width: 24px;
   height: 17px;
   background-image: url(../img/checkbox-on.svg);
