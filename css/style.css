@@ -1119,18 +1119,15 @@ input[type="radio"] {
   margin: 0;
   padding: 0;
   width: 560px;
-
-  background-color: #f8f7f4;
-  border: 6px solid transparent;
-  -webkit-border-image: url(../img/mail-background.svg) 5 round round;
-  -o-border-image: url(../img/mail-background.svg) 5 round round;
-  border-image: url(../img/mail-background.svg) 5 round round;
   border-radius: 20px;
+  background-color: #f8f7f4;
+  background-image: url(../img/distribution-background.jpg);
+  background-repeat: no-repeat;
 }
 
 .subscription-text {
-  padding-top: 15px;
-  margin-left: 20px;
+  padding-top: 20px;
+  margin-left: 27px;
   margin-bottom: 23px;
   margin-right: 20px;
   font-weight: 400;
@@ -1147,8 +1144,8 @@ input[type="radio"] {
 }
 
 .subscription-form .subscription-mail {
-  padding: 10px 13px;
-  margin-left: 20px;
+  padding: 11px 14px;
+  margin-left: 24px;
   width: 340px;
   border: 1px solid #d3d3d3;
   border-radius: 5px;
@@ -1177,8 +1174,8 @@ input[type="radio"] {
 
 .subscription-form button {
   display: inline-block;
-  padding: 9px 18px;
-  margin-left: 7px;
+  padding: 10px 19px;
+  margin-left: 11px;
   vertical-align: middle;
   border-radius: 30px;
 }
@@ -1292,7 +1289,7 @@ input[type="radio"] {
 }
 
 .footer-catalog {
-  padding-top: 10px;
+  padding-top: 8px;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
 
@@ -1363,7 +1360,7 @@ input[type="radio"] {
 }
 
 .footer-copyright {
-  padding-right: 9px;
+  padding-right: 10px;
   width: 180px;
   font-size: 12px;
   line-height: 18px;
