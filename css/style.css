@@ -1758,6 +1758,7 @@ select:hover + svg polyline {
 .filter-button {
   display: inline-block;
   vertical-align: top;
+  min-width: 145px;
   margin: 0;
   margin-top: 20px;
   margin-left: 12px;
@@ -1872,6 +1873,7 @@ select:hover + svg polyline {
 }
 
 .additive-wrapper {
+  width: 710px;
   padding-right: 15px;
   border-radius: 15px;
   background-color: #a9b9af;
@@ -1920,7 +1922,7 @@ select:hover + svg polyline {
   width: 17px;
   height: 17px;
   border: 2px solid rgba(255, 255, 255, 1);
-  border-radius: 4px;
+  border-radius: 4bpx;
 }
 
 .fillers-item input:focus + label::before {
