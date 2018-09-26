@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/normalize.min.css" rel="stylesheet">
   <link href="css/styles.min.css" rel="stylesheet">
 </head>
 
@@ -38,10 +38,10 @@
           </ul>
         </li>
         <li class="site-navigation-item">
-          <a href="#"><span class="underline">Доставка и оплата</span></a>
+          <a href="#" class="subtitle"><span class="underline">Доставка и оплата</span></a>
         </li>
         <li class="site-navigation-item">
-          <a href="#"><span class="underline">О Компании</span></a>
+          <a href="#" class="subtitle"><span class="underline">О Компании</span></a>
         </li>
       </ul>
       <div class="user-navigation-wrapper">
@@ -63,7 +63,7 @@
                   <input type="search" name="search" id="search" placeholder="Что ищем?">
                   <label class="visually-hidden" for="search">Поиск по сайту</label>
                 </p>
-                <button class="visually-hidden" type="submit" aria-label="Закрыть"></button>
+                <button class="visually-hidden" type="submit" aria-label="Найти"></button>
               </form>
             </div>
           </li>
@@ -118,24 +118,24 @@
               <table class="application">
                 <tr>
                   <td class="order-line orange">
-                    <button class="cart-delete" type="button"></button>
+                    <button class="cart-delete" type="button" aria-label="Убрать из корзины"></button>
                     <img src="img/ice-cream-with-orange-jam-mini.png" width="33" height="33" alt="Пломбир с апельсиновым джемом">
                     <span class="product-name">Пломбир с апельсиновым джемом</span>
                   </td>
-                  <td>1,5кг х <span>200руб.</span></td>
-                  <td>300руб.</td>
+                  <td>1,5 кг х <span>200 руб.</span></td>
+                  <td>300 руб.</td>
                 </tr>
                 <tr>
                   <td class="order-line strawberry">
-                    <button class="cart-delete" type="button"></button>
+                    <button class="cart-delete" type="button" aria-label="Убрать из корзины"></button>
                     <img src="img/strawberry-ice-cream-mini.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
                     <span class="product-name">Клубничный пломбир с присыпкой из белого шоколада</span>
                   </td>
-                  <td>1,5кг х <span>300руб</span></td>
-                  <td>450руб.</td>
+                  <td>1,5 кг х <span>300 руб</span></td>
+                  <td>450 руб.</td>
                 </tr>
                 <tr>
-                  <td class="last-row-price" colspan="3"><span class="total">Итого: 750руб.</span></td>
+                  <td class="last-row-price" colspan="3"><span class="total">Итого: 750 руб.</span></td>
                 </tr>
               </table>
               <a class="cart-button button" href="#">Оформить заказ</a>
@@ -154,8 +154,8 @@
     <div class="main-wrapper container">
 
       <ul class="breadcrumbs">
-        <li><a href="index.html"><span class="underline">Главная</span></a></li>
-        <li><a href="#"><span class="underline">Каталог</span></a></li>
+        <li><a href="index.html" class="breadcrumbs-link"><span class="underline">Главная</span></a></li>
+        <li><a href="#" class="breadcrumbs-link"><span class="underline">Каталог</span></a></li>
         <li class="breadcrumbs-current">Сливочное</li>
       </ul>
 
@@ -442,7 +442,7 @@
       </div>
       <ul class="documents-list">
         <li class="documents-item">
-          <a class="for-supplier" href="#">
+          <a class="for-supplier document-link" href="#">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15px" height="13px" viewBox="0 0 15 13" enable-background="new 0 0 15 13" xml:space="preserve">
               <path fill="#FFFFFF" d="M10.799,0c-1.35,0-2.551,0.65-3.3,1.661C6.75,0.65,5.549,0,4.199,0C1.875,0,0,1.806,0,4.044
 	          C0,7.223,7.499,13,7.499,13s7.499-5.777,7.499-8.956C14.998,1.806,13.123,0,10.799,0z"/>
@@ -451,13 +451,13 @@
           </a>
         </li>
         <li class="documents-item">
-          <a href="#"><span class="underline">Наши документы</span></a>
+          <a href="#" class="document-link"><span class="underline">Наши документы</span></a>
         </li>
         <li class="documents-item">
-          <a href="#"><span class="underline">О производстве</span></a>
+          <a href="#" class="document-link"><span class="underline">О производстве</span></a>
         </li>
         <li class="documents-item">
-          <a href="#"><span class="underline">Экологические стандарты</span></a>
+          <a href="#" class="document-link"><span class="underline">Экологические стандарты</span></a>
         </li>
       </ul>
       <p class="footer-copyright">
