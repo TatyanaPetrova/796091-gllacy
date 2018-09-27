@@ -936,7 +936,7 @@ input[type="radio"] {
 .promotion a {
   display: inline-block;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 12px;
   padding-left: 20px;
   padding-right: 26px;
   margin: 0;
@@ -1003,7 +1003,7 @@ input[type="radio"] {
 
 .item-price {
   position: absolute;
-  top: 162px;
+  top: 165px;
   left: 0;
   z-index: 20;
 
@@ -2107,7 +2107,7 @@ select:hover + svg polyline {
   flex-wrap: wrap;
   -ms-flex-line-pack: start;
   align-content: flex-start;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   width: 267px;
   text-align: center;
 }
@@ -2177,7 +2177,7 @@ select:hover + svg polyline {
   display: flex;
   padding: 0;
   margin: 0;
-  margin-top: 37px;
+  margin-top: 44px;
   margin-right: 40px;
 }
 
@@ -2193,7 +2193,7 @@ select:hover + svg polyline {
   padding: 0;
   margin: 0;
   margin-left: auto;
-  margin-right: -13px;
+  margin-right: -14px;
 }
 
 .pagination-item:first-child a::before {
@@ -2211,7 +2211,7 @@ select:hover + svg polyline {
 .pagination-item:last-child a::after {
   content: "";
   position: absolute;
-  top: 8px;
+  top: 7px;
   left: 158px;
   width: 8px;
   height: 12px;
@@ -2221,7 +2221,7 @@ select:hover + svg polyline {
 .pagination-item:last-child a:hover::after {
   content: "";
   position: absolute;
-  top: 8px;
+  top: 7px;
   left: 158px;
   width: 8px;
   height: 12px;
